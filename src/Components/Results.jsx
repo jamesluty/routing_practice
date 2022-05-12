@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
 
-const HelloColored = () => {
+const Results = () => {
     const {input, text, background} = useParams();
 
     if(!isNaN(input)){
@@ -13,10 +13,10 @@ const HelloColored = () => {
     } else {
         return (
             <div style={{backgroundColor: background}}>
-            <h1 style={{color: text}}>The word is: {input}</h1>
-        </div>
-    )
-}
+                <h1 style={{color: text}}>The word is: {input}</h1>
+            </div>
+        )
+    }
 }
 
-export default HelloColored
+export default Results
